@@ -72,5 +72,4 @@ def count_quotes():
 # http://127.0.0.1:5000/quotes/random
 @app.route("/quotes/random")
 def get_random_quote():
-    count_quotes = len(quotes)
-    return quotes[random.randint(0, count_quotes - 1)]
+    return random.choice(quotes)
