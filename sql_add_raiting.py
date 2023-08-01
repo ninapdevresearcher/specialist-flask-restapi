@@ -1,0 +1,5 @@
+ALTER TABLE quotes
+ADD COLUMN raiting int NOT NULL
+DEFAULT 1;
+
+SELECT * FROM quotes;
